@@ -138,6 +138,24 @@ export function Dashboard({ farmerData, onLogout }: DashboardProps) {
               </div>
             </CardContent>
           </Card>
+
+          {/* Video Section */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Farm Guide</CardTitle>
+              <CardDescription>Educational farming content</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <video 
+                className="w-full rounded-lg" 
+                controls 
+                poster="/placeholder.svg"
+              >
+                <source src="/assets/farmer_1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Chat Area */}
